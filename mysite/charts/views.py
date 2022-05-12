@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from models import Clientes
-from models import Reservas
+from .models import Clientes
+from .models import Reservas
 
 
 # Create your views here.
