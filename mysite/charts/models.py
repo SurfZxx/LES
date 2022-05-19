@@ -3,7 +3,8 @@ import datetime
 
 # Create your models here.
 class Clientes(models.Model):
-    nome = models.CharField(max_length=50)
+    primeiroNome = models.CharField(max_length=50)
+    ultimoNome = models.CharField(max_length=50)
     email = models.CharField(max_length=50)
     clientID = models.IntegerField()
     contrato = models.BooleanField()
