@@ -6,7 +6,7 @@ class Clientes(models.Model):
     primeiroNome = models.CharField(max_length=50)
     ultimoNome = models.CharField(max_length=50)
     email = models.CharField(max_length=50)
-    clientID = models.IntegerField()
+    clientID = models.AutoField(primary_key=True)
     contrato = models.BooleanField()
     
     def __str__(self):
